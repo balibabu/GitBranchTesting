@@ -1,0 +1,14 @@
+# to create new branch
+git checkout -b new-branch-name
+
+git add .
+git commit -m "Your commit message"
+
+
+# while pushing
+git push --set-upstream origin new-branch-name
+
+
+# If you're creating a new branch and want it to automatically switch to the newly created branch,
+
+git config --global branch.autoSetupMerge always
