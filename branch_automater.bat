@@ -2,10 +2,10 @@
 SETLOCAL
 
 REM Get the current date in the format yyyymmdd
-FOR /F "tokens=1-3 delims=/ " %%A IN ("%DATE%") DO (
+FOR /F "usebackq tokens=1-3 delims=-/" %%A IN (`echo %DATE%`) DO (
     SET "YYYY=%%C"
-    SET "MM=00%%A"
-    SET "DD=00%%B"
+    SET "MM=00%%B"
+    SET "DD=00%%A"
 )
 SET "TODAY=%YYYY%%MM:~-2%%DD:~-2%"
 
