@@ -13,4 +13,4 @@ git push --set-upstream origin new-branch-name
 
 git config --global branch.autoSetupMerge always
 
-test1
+test2
