@@ -12,3 +12,5 @@ git push --set-upstream origin new-branch-name
 # If you're creating a new branch and want it to automatically switch to the newly created branch,
 
 git config --global branch.autoSetupMerge always
+
+test1
